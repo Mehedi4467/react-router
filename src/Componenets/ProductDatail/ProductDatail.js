@@ -17,7 +17,7 @@ const ProductDatail = () => {
             <p>{product.title}-{product.id}</p>
 
             <div className={` ${loading ? 'flex justify-center mt-10' : 'hidden'}`}>
-                <svg class="animate-spin bg-black  h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+                <svg className="animate-spin bg-black  h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
 
                 </svg>
             </div>
