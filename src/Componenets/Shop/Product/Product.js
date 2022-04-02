@@ -1,14 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Product = ({ product }) => {
-
-    const { thumbnailUrl, title } = product;
+    const navigate = useNavigate();
+    const { thumbnailUrl, title, id } = product;
+    const showProductDetails = () => {
+        console.log('hello i am product details');
+    }
     return (
         <div>
             <div>
                 <img src={thumbnailUrl} alt="" />
                 <p title={title}>{title.length === 20 ? title : title.slice(0, 20) + '...'}</p>
-                <button style={{ cursor: 'pointer' }}>Details</button>
+                <button onClick={showProductDetails} style={{ cursor: 'pointer' }}>Details-{id}</button>
             </div>
         </div>
     );
