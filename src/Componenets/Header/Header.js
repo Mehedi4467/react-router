@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 import './Header.css';
 
 
@@ -8,10 +9,10 @@ const Header = () => {
         <header>
             <nav className='menu-bar'>
                 <ul>
-                    <li><Link to='/'>Home</Link></li>
-                    <li><Link to='/shop'>Shop</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/contact'>Contact</Link></li>
+                    <li><CustomLink to='/'>Home</CustomLink></li>
+                    <li><CustomLink to='/shop'>Shop</CustomLink></li>
+                    <li><CustomLink to='/about'>About</CustomLink></li>
+                    <li><CustomLink to='/contact'>Contact</CustomLink></li>
                 </ul>
 
             </nav>
