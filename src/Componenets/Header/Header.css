@@ -1,0 +1,20 @@
+.menu-bar{
+    background-color: aliceblue;
+    padding: 10px;
+}
+.menu-bar ul li{
+    list-style: none;
+    
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-bar ul li a:hover{
+    color: orange;
+}
