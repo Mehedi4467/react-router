@@ -5,7 +5,8 @@ const Product = ({ product }) => {
     const navigate = useNavigate();
     const { thumbnailUrl, title, id } = product;
     const showProductDetails = () => {
-        console.log('hello i am product details');
+        const path = `/product/${id}`;
+        navigate(path);
     }
     return (
         <div>
